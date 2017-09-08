@@ -1,0 +1,80 @@
+﻿   * {
+       margin: 0;
+       padding: 0;
+       /*border: 1px solid green;*/
+   }
+   .wrap_logo {
+   		width: 100%;
+   		height: 75x;
+   		color: white;
+   		line-height: 75px;
+   		text-align: center;
+   	  	background: #e21145;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   	  	
+   	}
+   /*.wrap span:before{
+   		background: url(touch-icon-iphone.png);
+   	}*/
+   .header {
+       width: 100%;
+       height: 40px;
+ 	   display: -webkit-flex;
+       line-height: 100px;
+       text-align: center;
+       font-weight: bold;
+		justify-content:space-around;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   }
+   .fix{
+   		position:fixed;
+		z-index:22;
+		top:0px;
+        background: #e21145;
+        color: white;
+   }
+   
+   
+   .header p {
+       height: 40px;
+       line-height: 40px;
+       text-align: center;
+   }
+   
+   .header p:nth-child(1) {
+       color: red;
+       border-bottom: 1px solid red;
+   }
+   
+   .content {
+       width: 88%;
+       margin: 70px auto 10px;
+   }
+   
+   .box {
+       width: 100%;
+   }
+   
+   .icon {
+       width: 35px;
+       height: 35px;
+       border-radius: 50%;
+       vertical-align: middle;
+   }
+   
+   .goods_name {
+       line-height: 35px;
+       font-size: 0.3rem;
+   }
+   
+   .text {
+       font-size: 0.33rem;
+       text-overflow: ellipsis;
+       /*禁止换行*/
+       /*超出的隐藏*/
+       overflow: hidden;
+   }
+   
+   .text a {
+       text-decoration: none;
+   }

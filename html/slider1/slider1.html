@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百思不得姐</title>
+    <link rel="stylesheet" type="text/css" href="./baisi.css">
+    <link Rel="SHORTCUT ICON" href="./logo.ico">
+</head>
+
+<body>
+    <div class="whole">
+    	<div class="wrap">
+    		<div class="wrap_logo">    			
+	    		<span>百思不得姐</span>
+    		</div>
+			<div class="header">
+	            <p>全部</p>
+	            <p>视频</p>
+	            <p>图片</p>
+	            <p>段子</p>
+	            <p>游戏</p>
+	            <p>热门</p>
+	       </div>
+    	</div>
+        <div class="content">
+
+        </div>
+    </div>
+</body>
+<script src="../../js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $.ajax({
+        "url": "http://route.showapi.com/255-1",
+        "type": "post",
+        "data": {
+            "showapi_appid": "45519",
+            "showapi_sign": "4e413232b2ac441b82eff87e813e6eac"
+        },
+        "success": function(res) {
+            console.log(res);
+            var html = "";
+            var obj = res.showapi_res_body.pagebean.contentlist;
+            for (var i = 0; i < obj.length; i++) {
+                console.log(obj[i]);
+                if (!obj[i].video_uri) {
+                    obj[i].video_uri = "http://mvideo.spriteapp.cn/video/2017/0905/ba177878-9190-11e7-b594-1866daeb0df1_wpc.mp4";
+                }
+
+                html += '<div class="box"><img class="icon" src="' + obj[i].profile_image +
+                    '" /><span class="goods_name">' + obj[i].name +
+                    '</span><p class="text">"' + obj[i].text + '"<a href="' + obj[i].weixin_url + '">全文</a></p><video width="100%" height="240px" autoplay="autoplay" controls src="' + obj[i].video_uri + '">' +
+                    '</video></div>';
+            }
+            $(".content").append(html);
+        }
+    })
+    //判断页面高度，固定菜单栏
+    var header= $(".header");
+    $(window).scroll(function(){
+//  	console.log($(document).scrollTop());
+		if($(document).scrollTop()>=75){
+			header.addClass("fix");
+			 $(".wrap_logo").hide();
+		}else{
+			header.removeClass("fix");
+			 $(".wrap_logo").show();
+		}
+	});
+	 $(".header p").hover(function() {
+//	 	console.log($(document).scrollTop());
+		$(".header p").css({"color": "black",
+            "border-bottom": "none"
+        });
+        $(".header p").eq($(this).index()).css({
+            "color": "red",
+            "border-bottom": "1px solid red"
+        });
+    }, function() {
+        $(".header p").eq($(this).index()).css({
+            "color": "black",
+            "border-bottom": "none"
+        });
+    });
+</script>
+
+</html>

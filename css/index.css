@@ -1,0 +1,626 @@
+html,body{
+	height: 100%;
+	position: relative;
+}
+body{
+	background-color: #eee;
+	font-family: helvetica Neue,arial, helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	
+}
+.swiper-slide{
+	font-size: 18px;
+	text-align: center;
+	background: #fff;
+}
+/*第一个页面*/
+.swiper-slide:nth-child(1){
+	background-color: #3e88fe;
+}
+.up-arrow{
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	width: 75px;
+	margin: 0 auto;
+	z-index: 11;
+}
+.up-arrow img{
+	width: 100%;
+	animation: upArrow 1s ease-in-out infinite;
+}
+@keyframes music{
+	to{
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes music{
+	to{
+		transform: rotate(360deg);
+	}
+}
+.btn-music-on{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../img/musicBtn.png) 50% 50% no-repeat;
+	padding: 50px;
+	z-index: 9999;
+	animation: music 3s linear infinite;
+	
+}
+.btn-music-off{
+	background: url(../img/musicBtnOff.png) 50% 50% no-repeat;
+}
+
+
+.index-building,
+.index-cloud,
+.index-elenent,
+.index-flight,
+.index-stars,
+.index-text,
+.index-text img:nth-child(2),
+.index-text img:nth-child(3){
+	position: absolute;
+}
+
+.index-flight,.index-text{
+	text-align: center;
+	z-index: 9;
+}
+.index-text{
+	width: 100%;
+	height: 250px;
+	margin: 15% 0 10% ;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.index-text img:nth-child(2){
+	left: 65px;
+}
+.index-text img:nth-child(3){
+	right: 150px;
+	top: 130px;
+}
+.index-flight{
+	top: 43%;
+	left: 0;
+	right: 0;
+}
+.index-elenent{
+	top: 120px;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+.index-flight img,
+.index-elenent img{
+	animation: zoom 3s infinite linear;
+}
+.index-elenent img{
+	animation-delay: 1s;
+}
+.index-cloud{
+	top: 100px;
+	left: 0;
+	right: 0px;
+	z-index: 2;
+}
+.index-cloud img{
+	animation: zoom 3s infinite linear;
+	animation-delay: 1s;
+}
+.index-stars{
+	z-index: 0;
+}
+
+.index-building{
+	bottom: 0;
+}
+/*第二*/
+
+.swiper-slide:nth-child(2){
+	background-color: #000;
+	
+}
+.ws-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../img/wasBg.jpg)50% 100% no-repeat;
+}
+.ws-line{
+	
+	width: 100%;
+	height: 100%;
+	background: url(../img/wasStar.png)50% 50% no-repeat;
+	z-index:11;
+}
+.wy-c{
+	top: 35%;
+	left: 20%;
+	position: absolute;
+}
+.was-txt{
+	position: relative;
+	z-index: 3;
+}
+.was-it{
+	margin-bottom: 50px;
+}
+.was-farm{
+	left: 10px;
+}
+/*第三*/
+
+.swiper-slide:nth-child(3){
+	background-color: #01172c;
+	z-index: 10;
+}
+.early-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.title{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+.b-build{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.block-page{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.abs{
+	position: absolute;
+	
+}
+.last-bus{
+	position: absolute;
+	left: -20%;
+	bottom: 5%;
+}
+.bus-avatar{
+	position: absolute;
+	right: 0;
+	bottom: 5%;
+}
+
+.where-bg{
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #000;
+}
+.where-bg img{
+	width: 100%;
+	height: 100%;
+}
+.where-wall{
+	bottom: 0;
+	right: 0;
+	height: 60%;
+}
+.where-txt{
+	width:100%;
+	bottom: 12%;
+	text-align: center;
+}
+.where-myteam{
+	left: 15%;
+	top: 30%;
+}
+.where-avatar{
+	z-index: 3;
+	right: 5%;
+	bottom: 51%;
+}
+.wall-avatar{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+/*第四页*/
+
+.swiper-slide:nth-child(4){
+	background-color: #312e5d;
+	
+}
+.light-off-bg{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0 ;
+	
+}
+.light-off-wall{
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.corner-wall{
+	
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	
+}
+.corner-txt{
+	position: absolute;
+	right: 0;
+	top: 40px;
+}
+.click-guide{
+	position: absolute;
+	top: 25%;
+	left: 32%;
+	
+}
+.click-guide img{
+	animation: zoom 3s infinite linear;
+	animation-delay: 1s;
+}
+
+.btn-light-off{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 227px;
+	height: 965px;
+	background: url(../img/lightOff.png)no-repeat;
+	background-size: cover;
+	z-index: 10;
+}
+
+.light-on-wall{
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #1b7fdd;
+	/*display: none;*/
+	
+	
+}
+.we-know{
+	position: absolute;
+	top: 10%;
+	left: 32%;
+	z-index: 11;
+}
+.light-on-bg{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+}
+
+.btn-light-on{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 227px;
+	height: 965px;
+	background: url(../img/lightOn.png)no-repeat;
+	background-size: cover;
+	z-index: 10;
+}
+/*.light-on-bg img{
+	animation: fadeIn 1s linear 1s forwards;
+	animation-play-state: paused;
+}*/
+
+/*第五*/
+.swiper-slide:nth-child(5){
+	background-color: #61870d;
+	
+}
+.about-bg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+}
+.foot-avatar{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 10;
+	
+}
+.foot-avatar img{
+	animation: zoom 1s forwards;
+}
+.foot-city{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.foot-ta{
+	position: absolute;
+	bottom: 20%;
+	left: 10%;
+}
+/*.foot-ta img{
+	animation: fadeOut 1s  forwards linear;
+	animation-delay: 3s;
+}*/
+.foot-tx{
+	position: absolute;
+	bottom: 20%;
+	left: 20%;
+	z-index: 10;
+}
+
+/*第六*/
+.swiper-slide:nth-child(6){
+	background-color: #837571;
+	
+}
+
+.run-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+}
+
+.run-avatar{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+.run-ta{
+	position: absolute;
+	bottom: 30%;
+	left: 10%;
+}
+
+/*.run-ta img{
+	animation-delay: 3s;
+	animation: fadeOut 1s forwards linear;
+	
+}*/
+
+.run-tx{
+	position: absolute;
+	bottom: 30%;
+	left: 20%;
+	z-index: 10;
+}
+
+/*第七*/
+.swiper-slide:nth-child(7){
+	background-color: #4add9d;
+}
+.salary-avatar{
+	position: absolute;
+	top: 3%;
+    left: 0px;
+    right: 7%;
+    margin-top: 40px;
+  
+}
+.salary-avatar img{
+	width: 40%;
+	height: 40%;
+}
+.salary-bg{
+	position: absolute;
+	top: 3%;
+    left: 0px;
+    right: 0px;
+    /*margin-top: 40px;*/
+}
+.salary-bg img{
+	width: 70%;
+	height: 70%;
+}
+.salary-ta{
+	position: absolute;
+	bottom: 23%;
+	left: 10%;
+}
+
+
+.salary-txt{
+	position: absolute;
+	bottom: 23%;
+	left: 20%;
+}
+
+
+/*第八*/
+
+.swiper-slide:nth-child(8){
+	background-color: #b5effd;
+}
+.intro-logo{
+	top: 10%;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+.intro-logo img{
+	margin: auto;
+}
+.intro-txt{
+	background: #fc5955;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 15px;
+    height: 70%;
+    top: 12%;
+    /*z-index: 3;*/
+    overflow: hidden;
+}
+.intro-txt-inner{
+	background: #ef3d38;
+    padding: 80px 20px 150px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 150%;
+    height: 67%;
+}
+
+.intro-cloudy{
+	top: 10%;
+	left: 0;
+	right: 0;
+}
+
+.intro-avatar{
+	bottom: 0%;
+    right: 7%;
+    
+}
+.intro-avatar img{
+	width: 160px;
+	height: 200px;
+}
+.intro-star{
+	bottom: 10%;
+    right: 27%;
+}
+.intro-star img{
+	animation: change1 1s infinite linear ;
+
+}
+
+@-webkit-keyframes change1{
+	
+	to{
+		opacity: 0.5;
+	}
+}
+
+
+
+.intro-flowers{
+	top: 60px;
+	left: 20px;
+}
+.intro-flowers img{
+	animation: zoom 1s infinite linear;
+	animation-delay: 1s;
+}
+
+
+/*第九*/
+.swiper-slide:nth-child(9){
+	background-color: #3e88f1;
+}
+.end-bg{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.end-bg img{
+	height: 100%;
+	width: 100%;
+}
+.end-cloudys{
+	position: absolute;
+	top: 10%;
+	left: 0;
+	right: 0;
+}
+.end-cloudys img{
+	animation: zoom 2s infinite linear;
+	animation-delay: 1s;
+}
+
+.end-logo{
+	position: absolute;
+	top: 8%;
+	width: 100%;
+}
+.end-logo img{
+	margin: auto;
+}
+
+
+
+.end-txt{
+	position: absolute;
+	top: 20%;
+	width: 100%;
+}
+.end-txt img{
+	margin: auto;
+}
+.end-mail{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+}
+.end-mail img{
+	margin: auto;
+}
+
+.end-click-guide{
+	position: absolute;
+	bottom: 47%;
+	width: 100%;
+}
+.end-click-guide img{
+	margin: auto;
+}
+
+.end-avatar{
+	position: absolute;
+	bottom: 22%;
+	width: 100%;
+}
+.end-avatar img{
+	margin: auto;
+	animation: qqshakeLarge 1s infinite linear;
+	animation-delay: 1s;
+	
+	
+}
+.end-btn{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+}
+.end-btn img{
+	margin: auto;
+}
+
+
+
+
+
+
+
